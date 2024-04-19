@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Link } from "react-router-dom";
 import paths from "../../constants/paths";
 import $ from "./HomeLayout.module.scss";
