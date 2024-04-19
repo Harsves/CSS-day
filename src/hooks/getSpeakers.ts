@@ -43,12 +43,12 @@ export interface Talk {
   title: string;
   slides: string;
   description: string;
-  video: Video[];
+  video: Video;
   speaker: Speaker[];
 }
 
 export interface Video {
-  youtubeLink: string;
+  ["youtube-link"]: string;
   vimeo: {
     id: string;
     link: string;

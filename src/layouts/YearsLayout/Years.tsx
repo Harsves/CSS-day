@@ -18,6 +18,7 @@ const Years: React.FC = () => {
         const allSpeakers: Speaker[] = data.flatMap(
           (congress) => congress.speakers
         );
+        console.log(data);
         const allTalks: Talk[] = data.flatMap((congress) => congress.talks);
 
         setSpeakers(allSpeakers);
@@ -54,6 +55,7 @@ const Years: React.FC = () => {
               {getTalksBySpeakerLink(speaker.link).map((talk, talkIndex) => (
                 <div key={talkIndex}>
                   <p>{talk.title}</p>
+                  <p>{talk.video["youtube-link"]}</p>
                   {talk.video && (
                     <a
                       className={$.link}
