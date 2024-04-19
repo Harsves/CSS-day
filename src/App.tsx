@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import routes from "./routes";
 import Years from "./layouts/YearsLayout/Years";
-import styles from "./App.module.scss";
 
 function App() {
   return (
