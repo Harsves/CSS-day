@@ -1,42 +1,86 @@
 .wrapper {
   overflow: auto;
-  scroll-snap-type: y mandatory;
   height: 100vh;
+
+  @media screen and (min-width: 1024px) {
+    scroll-snap-type: y mandatory;
+  }
 }
 
 .speakerContainer {
   display: flex;
-  width: 100vw;
-  scroll-snap-align: start;
+  width: 100%;
   transition: transform 0.5s ease;
 
   &:nth-of-type(even) {
     flex-direction: row-reverse;
     justify-content: space-between;
+    text-align: right;
+  }
+
+  @media screen and (min-width: 1024px) {
+    scroll-snap-align: start;
   }
 }
 
 .img {
-  height: 20vh;
+  width: 30%;
+  height: 30%;
 
   @media screen and (min-width: 768px) {
+    width: auto;
     height: 50vh;
   }
 
   @media screen and (min-width: 1024px) {
+    width: auto;
     height: 100vh;
   }
+}
+
+.speakerInfo {
+  margin: 1rem 1rem;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    max-width: 25rem;
+  }
+}
+
+.speakerInfo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 5rem;
+  }
+}
+
+.speakerInfo p {
+  font-size: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+.btnWrapper {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link {
   border-radius: 0.5rem;
   height: 2.5rem;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   color: black;
   width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
 
   &.is-red {
     background-color: #ff0000;
@@ -79,33 +123,8 @@
   &.is-peru {
     background-color: #cd853f;
   }
-}
-
-.speakerInfo {
-  margin-top: 5rem;
-  margin-left: 3rem;
-  max-width: 25rem;
-}
-
-.speakerInfo h2 {
-  margin: 0;
-  font-size: 1.5rem;
 
   @media screen and (min-width: 1024px) {
-    font-size: 5rem;
+    margin: 1rem 0rem;
   }
-}
-
-.speakerInfo p {
-  font-size: 1rem;
-
-  @media screen and (min-width: 1024px) {
-    font-size: 1.5rem;
-  }
-}
-
-.btnWrapper {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
 }
