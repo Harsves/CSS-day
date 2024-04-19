@@ -50,37 +50,77 @@ const Header: React.FC = () => {
                 <FontAwesomeIcon icon={faTimes} />
               </button>
 
-              <Link className={$.link} to={`${paths.home}`}>
+              <Link className={$.link} to={`${paths.home}`} onClick={closeMenu}>
                 <p>Home</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2013`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2013`}
+                onClick={closeMenu}
+              >
                 <p>2013</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2014`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2014`}
+                onClick={closeMenu}
+              >
                 <p>2014</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2015`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2015`}
+                onClick={closeMenu}
+              >
                 <p>2015</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2016`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2016`}
+                onClick={closeMenu}
+              >
                 <p>2016</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2017`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2017`}
+                onClick={closeMenu}
+              >
                 <p>2017</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2018`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2018`}
+                onClick={closeMenu}
+              >
                 <p>2018</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2019`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2019`}
+                onClick={closeMenu}
+              >
                 <p>2019</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2022`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2022`}
+                onClick={closeMenu}
+              >
                 <p>2022</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2023`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2023`}
+                onClick={closeMenu}
+              >
                 <p>2023</p>
               </Link>
-              <Link className={$.link} to={`${paths.years}/2024`}>
+              <Link
+                className={$.link}
+                to={`${paths.years}/2024`}
+                onClick={closeMenu}
+              >
                 <p>2024</p>
               </Link>
             </div>
